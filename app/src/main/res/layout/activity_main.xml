@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity" android:orientation="vertical">
+
+    <!--Movie Name-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_name"/>
+    <EditText
+            android:id="@+id/etMovieName"
+            android:hint="@string/hint_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!--Movie Description-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_desc"/>
+    <EditText
+            android:id="@+id/etMovieDesc"
+            android:hint="@string/hint_movie_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!--Movie Language-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtn_movie_lang"/>
+
+    <RadioGroup
+            android:id="@+id/rgLanguage"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+                android:id="@+id/rbEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_english_language"
+                android:checked="true"/>
+
+        <RadioButton
+                android:id="@+id/rbChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_chinese_language"/>
+        <RadioButton
+                android:id="@+id/rbMalay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_malay_language"/>
+        <RadioButton
+                android:id="@+id/rbTamil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_tamil_language"/>
+
+    </RadioGroup>
+
+    <!--Release Date-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/release_date"/>
+
+    <EditText
+            android:id="@+id/etReleaseDate"
+            android:hint="@string/hint_release_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+
+    <!--Checkboxes-->
+    <CheckBox
+            android:id="@+id/cbNotSuitable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkbx_not_suitable"
+            android:onClick="btnHide"/>
+    <CheckBox
+            android:id="@+id/cbViolence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkbx_violence"
+            android:visibility="gone"/>
+    <CheckBox
+            android:id="@+id/cbLanguageUsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkbx_language_used"
+            android:visibility="gone"/>
+
+    <!--Add Movie-->
+    <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/btn_add_movie"-->
+            <!--android:onClick="btnValidateInput"/>-->
+
+</LinearLayout>

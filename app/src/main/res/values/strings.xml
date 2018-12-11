@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MovieRater</string>
+    <string name="movie_name">Name</string>
+    <string name="movie_desc">Description</string>
+    <string name="rbtn_english_language">English</string>
+    <string name="rbtn_chinese_language">Chinese</string>
+    <string name="rbtn_malay_language">Malay</string>
+    <string name="rbtn_tamil_language">Tamil</string>
+    <string name="rbtn_movie_lang">Language</string>
+    <string name="release_date">Release date</string>
+    <string name="chkbx_not_suitable">Not suitable for all audience</string>
+    <string name="chkbx_violence">Violence</string>
+    <string name="chkbx_language_used">Language used</string>
+    <string name="btn_add_movie">ADD MOVIE</string>
+    <string name="hint_movie_name">Enter the title of movie</string>
+    <string name="hint_movie_desc">Enter a short description of the movie</string>
+    <string name="hint_release_date">Enter release date</string>
+    <string name="movie_title">Title:</string>
+    <string name="movie_overview">Overview:</string>
+    <string name="movie_review">Enter your review for the movie:</string>
+    <string name="views">Share your view on the show</string>
+    <string name="tv_landing">You have not added a movie \nLong Press me to add a movie</string>
+    <string name="tv_review">No Reviews yet. \nLong Press here to add your review.</string>
+
+</resources>
