@@ -5,6 +5,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.RatingBar
@@ -135,6 +136,27 @@ class ViewMovie : AppCompatActivity() {
         }
 
         return super.onContextItemSelected(item)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+        menuInflater.inflate(R.menu.edit_view_menu, menu)
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+
+        val movie = intent.getSerializableExtra("movieData") as Movie?
+
+        if (item?.itemId == R.id.miEdit) {
+            val intent = Intent(this, EditMovie::class.java).apply {
+                putExtra("movieData", movie as Serializable)
+            }
+            startActivity(intent)
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }
 

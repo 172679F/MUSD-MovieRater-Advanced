@@ -5,13 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LandingPage"
-    android:orientation="vertical">
-    
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/tv_landing"
-        android:gravity="center"
-        android:id="@+id/tvLanding"/>
+    android:orientation="vertical"
+    android:id="@+id/landing_layout">
+
 
 </LinearLayout>

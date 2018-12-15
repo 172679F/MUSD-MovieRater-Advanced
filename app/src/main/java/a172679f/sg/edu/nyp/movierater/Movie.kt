@@ -22,3 +22,14 @@ class Movie(movieName: String, movieDesc: String, movieLang: String, movieDate: 
         this.movieRating = movieRating
     }
 }
+
+object MovieList {
+    var movies = arrayListOf<Movie>()
+
+    fun listMovies() {
+        for(i in movies)
+        {
+            println(i)
+        }
+    }
+}

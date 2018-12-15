@@ -192,8 +192,9 @@ class MainActivity : AppCompatActivity() {
         else {
 
             val movie = Movie(movieName, movieDesc, movieLang, movieDate, movieSuitable, movieReview, movieRating)
+            MovieList.movies.add(movie)
 
-            if (item?.itemId == R.id.miAdd) {
+            if (item?.itemId == R.id.miSave) {
                 val intent = Intent(this, ViewMovie::class.java).apply {
                     putExtra("movieData", movie as Serializable)
                 }

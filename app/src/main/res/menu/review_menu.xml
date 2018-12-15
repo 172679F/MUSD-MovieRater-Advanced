@@ -7,4 +7,9 @@
         android:title="Submit"
         app:showAsAction="always" />
 
+    <item
+            android:id="@+id/miCancelReview"
+            android:title="Cancel"
+            app:showAsAction="always" />
+
 </menu>
